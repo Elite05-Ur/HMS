@@ -1,0 +1,28 @@
+{
+  "name": "hms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@imagekit/nodejs": "^7.10.0",
+    "axios": "^1.18.1",
+    "bcryptjs": "^3.0.3",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "jspdf": "^4.2.1",
+    "mongoose": "^9.8.0",
+    "multer": "^2.2.0"
+  }
+}
