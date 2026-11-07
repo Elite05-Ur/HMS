@@ -10,8 +10,14 @@ const billingRoutes = require('./routes/billing.routes');
 const reportRoutes = require('./routes/report.routes');
 const app = express()
 
+ const allowedOrigins = [
+    'http://localhost:5173',
+    'https://hospital-managment-system-chi.vercel.app',
+    process.env.CLIENT_URL // Yeh Render ke environment variables se aayega
+].filter(Boolean); // Yeh undefined values ko hata dega agar env set na ho
+
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: allowedOrigins,
     credentials: true
 }));
 
