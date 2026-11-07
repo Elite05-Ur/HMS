@@ -12,3 +12,8 @@ ConnectDB().then(() => {
 }).catch((err) => {
     console.log("Failed to connect DB:", err)
 })
+
+
+app.get('/', (req, res) => {
+  res.send('Backend is running successfully!');
+});
